@@ -1,0 +1,33 @@
+/*img
+{
+    height: auto; 
+    max-width: 100%;
+    padding-top: 5.5px;
+
+}*/
+
+body
+{
+    /*height: 500px;*/
+   font-family: 'Poppins', 'sans-serif';
+  
+}
+
+.parallax-container
+{
+   font-family: 'Poppins', 'sans-serif';
+  /* background-image: url("img/fondo_ppal2.png");*/
+  /* background-color: #FEFFEB;*/
+}
+
+.navbar
+{
+ font-family: 'Poppins', 'sans-serif';
+ font-size: 2%
+}
+
+.page-footer
+{
+ font-family: 'Poppins', 'sans-serif';
+ color: black;
+}
