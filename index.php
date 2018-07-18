@@ -26,9 +26,9 @@
     <body>
 
      <?php
-       include("html/head.html");
-       include("html/inicio.html");
-       include("html/footer.html");
+       include("php/head.php");
+       include("php/inicioview.php");
+       include("php/footer.php");
       ?>
 
       

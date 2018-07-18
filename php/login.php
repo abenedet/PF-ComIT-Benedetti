@@ -1,3 +1,4 @@
+
 <?php
 
     $email= $_POST["email"];
@@ -26,7 +27,7 @@
                 else 
                 {
                     echo '<script type="text/javascript">alert("La contraseña ingresada es incorrecta");
-                    window.location.href="../html/login.html";</script>';
+                    window.location.href="loginview.php";</script>';
                 } 
             }
               
