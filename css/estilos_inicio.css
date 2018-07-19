@@ -15,6 +15,23 @@ img
 
 }
 
+#titulo1{
+
+    font-size: 60px;
+}
+
+#parrafo1{
+    font-size: 18px;
+}
+
+#titulo2, #titulo3{
+
+    font-size: 26px;
+}
+
+
+
+
 
 
   /*  background-image: url("../img/fondo_ppal2.png");*/

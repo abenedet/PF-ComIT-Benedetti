@@ -3,14 +3,19 @@
         $(document).ready(function(){
         $('select').formSelect();
         });
+
+         $(document).ready(function(e){
+                $(".btnInfo").click(function(e){
+                    var url= $(this).attr("href");
+                    $(".parallax-container").load(url);
+                    return false;
+                });
+            });
     </script>
 </head>
 
 <body>
   <!--Card Panel-->
-    <div class="card-panel">
-        <span class="black-text">A Basic Panel</span>
-    </div>
 
     <div class="container">
         <div class="input-field col s12">
@@ -38,22 +43,41 @@
             {
                 While ($row= mysqli_fetch_assoc($result))
                 {
-                    $nombre= $row['Nombre']; 
+                    $nombre= $row['Razon_social']; 
                     $logo= $row['URL_Logo'];
-                    $descripcion= $row['Descripcion'];
+                    $direccion= $row['Direccion'];
+                    $telefono= $row['Telefono'];
+                    $email= $row['Email'];
+                   // $descripcion= $row['Descripcion'];
 
-                    echo '<div class="col s12 m3"> ';
+                    echo '<div class="col s12 m4"> ';
                         echo '<div class="card">';
                             echo '<div class="card-image">';
                                 echo '<img src='.$logo.'>';
                             echo '</div>';
 
                         echo '<div class="card-content">';
-                        echo '<p>'.$nombre.'</p>';
-                        echo '<p>'.$descripcion.'</p>';
+                        echo '<p> '.$nombre.'</p>';
+                        echo '<div class="divider"></div>';
+                        echo '<div class="section">';
+                        echo '<p> <i class="material-icons">location_on</i>'.$direccion.'</p>';
+                        echo '</div>';
+
+                        echo '<div class="divider"></div>';
+                        echo '<div class="section">';
+                        echo '<p> <i class="material-icons">phone</i>'.$telefono.'</p>';
+                        echo '</div>';
+
+                        echo '<div class="divider"></div>';
+                        echo '<div class="section">';
+                        echo '<p><i class="material-icons">email</i>'.$email.'</p>';
+                        echo '</div>';
+                   
+
+                       // echo '<p>'.$descripcion.'</p>';
                     echo '</div>';
                     echo '<div class="card-action">';
-                    echo '<a href="#">Ver más..</a>';
+                    echo '<a href="php/salon.php">Ver más..</a>';
                     echo '</div>'; 
                     echo '</div>'; 
                     echo '</div>';    

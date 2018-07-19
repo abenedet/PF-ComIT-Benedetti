@@ -51,7 +51,7 @@
                                             <div class="col s12">
                                                 <h2>Registro</h2>
                                                <!-- <p></p>-->
-                                                <form action="/registro.php" method="POST">
+                                                <form action="php/registro.php" method="POST">
                                                     <div class="input-field">
                                                         <input type="text" id="nombre" name="nombre">
                                                         <label for="nombre">Nombre </label>
@@ -78,13 +78,13 @@
                                                     </div>
                                 
                                                     <div class="input-field">
-                                                        <input type="text" id="email2" name="email2">
-                                                        <label for="email2">E-Mail </label>
+                                                        <input type="text" id="email" name="email">
+                                                        <label for="email">E-Mail </label>
                                                     </div>
                                 
                                                     <div class="input-field">
-                                                        <input type="password" id="password2" name="password2">
-                                                        <label for="password2">Contraseña </label>
+                                                        <input type="password" id="password" name="password">
+                                                        <label for="password">Contraseña </label>
                                                     </div>
                                 
                                                     <div class="input-field">
@@ -93,7 +93,7 @@
                                                     </div>
                                 
                                                    
-                                                    <button class="btn waves-effect waves-light" type="submit" id="submit2" name="button2">Enviar
+                                                    <button class="btn waves-effect waves-light" type="submit" id="submit" name="button2">Enviar
                                                         <i class="material-icons right">send</i>
                                                     </button>
                                 

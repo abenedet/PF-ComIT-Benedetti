@@ -5,8 +5,8 @@
     { 
         $servername= "127.0.0.1"; 
         $database="miempresa";
-        $username="admin"; 
-        $password="admin123";
+        $username="root"; 
+        $password="";
 
         //Create connection 
         $conn= mysqli_connect($servername, $username, $password, $database);
