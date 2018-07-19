@@ -1,17 +1,41 @@
 
-<script>
-     $(document).ready(function(){
-             $('.datepicker').datepicker();
-            });
+<head>
+    <link type="text/css" rel="stylesheet" href="css/estilos_salon.css">	
+</head>
 
-   $('.carousel').carousel({
-    fullWidth: true
+
+<script>
+
+$(document).ready(function(){
+    $('.datepicker').datepicker(
+        {
+            format: 'dd/mm/yyyy',
+                 cancel: 'Cancelar',
+                 autoClose: true, 
+                 //minDate: new Date(),
+                 i18n: {   
+                    months: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto',
+                            'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                    monthsShort: ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago',
+                            'Sept', 'Oct', 'Nov', 'Dic'],
+                    weekdaysShort: ['Dom','Lun','Mar','Miér','Jue',
+                            'Vie', 'Sáb'], 
+                    weekdaysAbbrev: [ 'D', 'L', 'M', 'X', 'J', 'V', 'S' ]
+                    }
+        });
+     });
+
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true, 
+    indicators: true,
+    numVisible: 10
   });
 </script>
 
-
 <body>
 
+    <br>
+    <br>
     <div class="container">
        <!-- <div class="card-panel">-->
           <!--  <span class="panel-salon">Sinsarabin</span>-->
@@ -59,15 +83,27 @@
                 </div>
             </div>
         </div>
+
+        <br>
         <div class="card-panel">
             <span class="panel-fotos">Fotos</span>
         </div>
 
        
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="img/fondo1.jpg"></a>
+       <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one"><img src="img/foto11.jpg"></a>
+            <a class="carousel-item" href="#two"><img src="img/foto12.jpg"></a>
+            <a class="carousel-item" href="#three"><img src="img/foto17.jpg"></a>
+            <a class="carousel-item" href="#four"><img src="img/foto16.jpg"></a>
+            <a class="carousel-item" href="#five"><img src="img/foto14.jpg"></a>
+            <a class="carousel-item" href="#six"><img src="img/foto13.jpg"></a>
+            <a class="carousel-item" href="#seven"><img src="img/foto15.jpg"></a>
+            <a class="carousel-item" href="#eight"><img src="img/foto18.jpg"></a>
+            <a class="carousel-item" href="#nine"><img src="img/foto19.jpg"></a>
+            <a class="carousel-item" href="#ten"><img src="img/foto10.jpg"></a>
         </div>
 
+        <br>
 
         <div class="card-panel">
             <span class="panel-reservas">Reservas</span>
@@ -75,6 +111,7 @@
         <p>Seleccioná la fecha en la que querés realizar tu evento y hacé tu reserva Online!</p>
         <input type="text" id="calendario" class="datepicker">
         <a id="btnReserva" class="waves-effect waves-light btn" href="php/reservas.php">Reservar</a>
+        <br>
         <br>
         <div class="card-panel">
             <span class="panel-contacto">Contacto</span>
@@ -109,12 +146,15 @@
 
             </form>
         <!--</div>-->
+        <br>
         <div class="card-panel">
-            <span class="panel-contacto">Cómo llegar</span>
+            <span class="panel-ubicacion">Cómo llegar</span>
         </div>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6225.564851082556!2d-62.257166!3d-38.722804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda34a2eb329f3%3A0xbe639aaedb6ce554!2sSan+Mart%C3%ADn+684%2C+B8000FIN+Bah%C3%ADa+Blanca%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1531969354286" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+        
+       
 
     </div>
+    <br>
 </body>

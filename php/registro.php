@@ -4,8 +4,8 @@
     $apellido=$_POST["apellido"];
     $direccion=$_POST["direccion"];
     $telefono=$_POST["telefono"];
-    $email=$_POST["email"];
-    $password= $_POST["password"];
+    $email=$_POST["email2"];
+    $password= $_POST["password2"];
     $repeatpassword=$_POST["repeatpassword"];
 
     require("connection.php"); 

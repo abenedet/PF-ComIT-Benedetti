@@ -1,11 +1,30 @@
 
 <head>
-   <!-- <link type="text/css" rel="stylesheet" href="css/estilos_login.css">-->
+    <link type="text/css" rel="stylesheet" href="css/estilos_login.css">
     <script>
         $(document).ready(function()
         {
             $('.modal-trigger').leanModal();
-        });   
+        });
+
+
+         $(document).ready(function(e){
+                $("#btnIngresar").click(function(e){
+                    var url= $(this).attr("href");
+                    $(".parallax-container").load(url);
+                    return false;
+                });
+            });
+        
+         $(document).ready(function(e){
+                $("#btnRegistrar").click(function(e){
+                    var url= $(this).attr("href");
+                    $(".parallax-container").load(url);
+                    return false;
+                });
+            });
+               
+               
     </script>
 
 </head>
@@ -13,7 +32,9 @@
     <div class="container">
         <div class= "row">
             <div class="col s12">
-                <h2>Iniciar Sesión</h2>
+            <div class="card-panel">
+                <span class="panel-login"><h2 id="subtitulo2">Iniciar Sesión</h2></span>
+                
                <!-- <p></p>-->
               <!-- <form action="/form/login.html" method="POST" class="formulario-login" name="login" id="formulario-login">-->
                    <form action="php/login.php" method="POST">
@@ -28,7 +49,7 @@
                     </div>
                    <!-- <input type="submit" value="Enviar">-->
                    
-                    <button class="btn waves-effect waves-light" type="submit" id="submit" name="button">Ingresar
+                    <button class="btn waves-effect waves-light" type="submit" id="submit" name="btnIngresar">Ingresar
                         <i class="material-icons right">send</i>
                     </button>
                 </form>
@@ -43,13 +64,16 @@
                    <!-- Ventana Modal Registro -->
 
                 <a  href="#modal1" class="waves-effect waves-light btn modal-trigger">Registrate acá</a>
-                
+            </div> 
                 <div id="modal1" class="modal">
                         <div class="modal-content">
                                 <div class="container-registro">
                                         <div class= "row">
                                             <div class="col s12">
-                                                <h2>Registro</h2>
+                                            <div class="section">
+                                                <h4 id="subtitulo4">Registro</h4>
+                                                <div class="divider"></div>
+                                            </div>
                                                <!-- <p></p>-->
                                                 <form action="php/registro.php" method="POST">
                                                     <div class="input-field">
@@ -78,12 +102,12 @@
                                                     </div>
                                 
                                                     <div class="input-field">
-                                                        <input type="text" id="email" name="email">
+                                                        <input type="text" id="email2" name="email2">
                                                         <label for="email">E-Mail </label>
                                                     </div>
                                 
                                                     <div class="input-field">
-                                                        <input type="password" id="password" name="password">
+                                                        <input type="password" id="password2" name="password2">
                                                         <label for="password">Contraseña </label>
                                                     </div>
                                 
@@ -93,7 +117,7 @@
                                                     </div>
                                 
                                                    
-                                                    <button class="btn waves-effect waves-light" type="submit" id="submit" name="button2">Enviar
+                                                    <button class="btn waves-effect waves-light" type="submit" id="submit" name="btnRegistrar">Enviar
                                                         <i class="material-icons right">send</i>
                                                     </button>
                                 

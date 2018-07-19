@@ -1,9 +1,14 @@
-#subtitulo3
+#subtitulo2, #subtitulo3
+{
+    font-size: 30px;
+}
+
+#subtitulo4
 {
     font-size: 20px;
 }
 
-.parallax-container
+.panel-login
 
 {
    background-color: #FEFFEB

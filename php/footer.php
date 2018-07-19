@@ -15,7 +15,7 @@
                 <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">miempresa@gmail.com</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">contacto@miempresa.com</a></li>
               </ul>
             </div>
           </div>

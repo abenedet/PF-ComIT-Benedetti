@@ -4,9 +4,12 @@
 </head>
 <body>
     <div class="container">
-        <div class= "row">
-            <div class="col s12">
-                <h2>Contáctenos</h2>
+       <!-- <div class= "row">-->
+            <div class="col s12 m7">
+            <div class="card-panel">
+                <span class="panel-contacto"><h2>Contáctenos</h2></span>
+        
+                
                 <p>Hacenos tu consulta y te responderemos en unos instantes..</p>
                 <form action:#>
                     <div class="input-field">
@@ -30,7 +33,9 @@
                         <label for="textarea">Mensaje </label>
                     </div>
 
-                    <a class="waves-effect waves-light btn">Enviar</a>
+                    <button class="btn waves-effect waves-light" type="submit" id="submit" name="button">Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
 
                 </form>
 
@@ -38,10 +43,10 @@
             </div>
 
 
-        </div>
+      </div>
    
 
-    </div>
+   </div>
    
 
 </body>

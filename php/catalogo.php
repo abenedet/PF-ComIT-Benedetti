@@ -4,19 +4,18 @@
         $('select').formSelect();
         });
 
-         $(document).ready(function(e){
-                $(".btnInfo").click(function(e){
-                    var url= $(this).attr("href");
-                    $(".parallax-container").load(url);
-                    return false;
-                });
+       $(document).ready(function(e){
+               $(".vermas").click(function(e){
+                   var url= $(this).attr("href");
+                  $(".parallax-container").load(url);
+                   return false;
+               });
             });
     </script>
 </head>
 
 <body>
   <!--Card Panel-->
-
     <div class="container">
         <div class="input-field col s12">
             <select>
@@ -77,7 +76,7 @@
                        // echo '<p>'.$descripcion.'</p>';
                     echo '</div>';
                     echo '<div class="card-action">';
-                    echo '<a href="php/salon.php">Ver más..</a>';
+                    echo '<a class="vermas" href="php/salon.php">Ver más..</a>';
                     echo '</div>'; 
                     echo '</div>'; 
                     echo '</div>';    
