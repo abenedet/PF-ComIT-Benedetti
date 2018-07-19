@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-07-2018 a las 19:56:14
+-- Tiempo de generación: 19-07-2018 a las 20:39:40
 -- Versión del servidor: 10.1.33-MariaDB
 -- Versión de PHP: 7.2.6
 
@@ -45,7 +45,14 @@ CREATE TABLE `salones` (
 
 INSERT INTO `salones` (`Id`, `Razon_social`, `Telefono`, `Direccion`, `Descripcion`, `URL_Logo`, `URL_Foto1`, `URL_Foto2`) VALUES
 (1, 'Sinsarabin', '4530702', 'San Martin 684', 'Salón con cancha de futbol, telas, inflables. Con una capacidad para 55 adultos y 30 niños', 'img/logo1.jpg', 'img/foto11.jpg', 'img/foto12.jpg'),
-(3, 'A la pipetua', '4546740', 'Mitre 1600', 'salon para 20 personas', 'img/logo2.jpg', 'img/foto21.jpg', 'img/foto22.jpg');
+(3, 'A la pipetua', '4546740', 'Mitre 1600', 'salon para 20 personas', 'img/logo2.jpg', 'img/foto21.jpg', 'img/foto22.jpg'),
+(4, 'Pipon', '452789', 'Sarmiento 1200', '', 'img/logo3.jpg', '', ''),
+(5, 'Aventuras', '753147', 'Saavedra 1260', '', 'img/logo4.jpg', '', ''),
+(6, 'Unicos', '951456', 'Berutti 815', '', 'img/logo5.jpg', '', ''),
+(7, 'La Plaza Party', '854236', 'Zapiola 1200', '', 'img/logo6.jpg', '', ''),
+(8, 'La Soc de los chicos', '451897', 'Brown 450', '', 'img/logo7.jpg', '', ''),
+(9, 'Rayuela', '741954', 'Las Heras 721', '', 'img/logo8.jpg', '', ''),
+(10, 'Club Confetti', '453168', 'Entre Rios 2500', '', 'img/logo9.jpg', '', '');
 
 -- --------------------------------------------------------
 
@@ -97,7 +104,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `salones`
 --
 ALTER TABLE `salones`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
